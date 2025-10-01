@@ -1,5 +1,12 @@
 # Proyecto Veterinaria Goicochea - Infraestructura como Código
 
+## Integrantes:
+- Alfaro Loyola, Emilio
+- Saldarriaga Urquizo, Pedro
+- Toribio Flores, Joe
+- Rivas Machuca, Marlon
+- Colona Chavez, Fabricio
+  
 Este proyecto implementa la infraestructura y el despliegue de la aplicación **Veterinaria Goicochea** utilizando **Terraform**, **Docker**, **AWS ECS Fargate**, **Amazon RDS** y **Application Load Balancer (ALB)**.  
 La aplicación permite gestionar reservas y pagos, integrándose con MercadoPago y desplegándose en un entorno seguro en la nube de AWS.
 
@@ -30,17 +37,17 @@ La aplicación permite gestionar reservas y pagos, integrándose con MercadoPago
 ---
 
 ## Estructura de Archivos
-terraform/
-│── alb.tf
-│── ecs.tf
-│── ecr.tf
-│── iam.tf
-│── rds.tf
-│── security.tf
-│── vpc.tf
-│── vpc_endpoints.tf
-│── data.tf
-│── providers.tf
+terraform/  
+│── alb.tf  
+│── ecs.tf  
+│── ecr.tf  
+│── iam.tf  
+│── rds.tf  
+│── security.tf  
+│── vpc.tf  
+│── vpc_endpoints.tf  
+│── data.tf  
+│── providers.tf  
 │── outputs.tf
 
 ---
@@ -48,7 +55,6 @@ terraform/
   ## Comandos Principales
   
   ### Inicializar Terraform
-    ```bash
       cd terraform
       sudo terraform init
   ### Planificar los cambios
