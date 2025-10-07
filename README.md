@@ -51,8 +51,9 @@ terraform/
 │── outputs.tf
 
 ---
-
-  ## Comandos Principales
+  ## Comando para conectar con aws
+      sudo aws config
+  ## Comandos Principales de Terraform
   
   ### Inicializar Terraform
       cd terraform
@@ -70,8 +71,8 @@ terraform/
     cd backend
     sudo docker build -t vet-backend .
   ### Etiquetar la imagen para ECR
-    docker tag vet-backend:latest <AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/vet-backend:latest
+    sudo docker tag vet-backend:latest <AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/vet-backend:latest
   ### Autenticarse en ECR
-    aws ecr get-login-password --region <REGION> | docker login --username AWS --password-stdin <AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com
+    sudo aws ecr get-login-password --region <REGION> | docker login --username AWS --password-stdin <AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com
   ### Subir la imagen a ECR
-    docker push <AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/vet-backend:latest
+    sudo docker push <AWS_ACCOUNT_ID>.dkr.ecr.<REGION>.amazonaws.com/vet-backend:latest
