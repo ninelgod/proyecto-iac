@@ -36,7 +36,7 @@ La aplicación permite gestionar reservas y pagos, integrándose con MercadoPago
 
 ---
 
-## Estructura de Archivos
+## Estructura de Archivos .tf
 terraform/  
 │── alb.tf  
 │── ecs.tf  
