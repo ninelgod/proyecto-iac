@@ -1,8 +1,7 @@
-resource "aws_ecr_repository" "backend" {
-  name                 = "vet-backend"
-  image_tag_mutability = "MUTABLE"
+resource "aws_ecr_repository" "reserva" {
+  name = "reserva"
+}
 
-  tags = {
-    Name = "vet-backend"
-  }
+resource "aws_ecr_repository" "pago" {
+  name = "pago"
 }

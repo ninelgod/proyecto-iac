@@ -1,11 +1,11 @@
-output "ecr_api_endpoint" {
-  value = aws_vpc_endpoint.ecr_api.dns_entry
+output "api_gateway_url" {
+  value = aws_apigatewayv2_api.http_api.api_endpoint
 }
 
-output "ecr_dkr_endpoint" {
-  value = aws_vpc_endpoint.ecr_dkr.dns_entry
+output "alb_dns" {
+  value = aws_lb.app.dns_name
 }
 
-output "s3_endpoint" {
-  value = aws_vpc_endpoint.s3.dns_entry
+output "reserva_target_group_arn" {
+  value = aws_lb_target_group.reserva_tg.arn
 }
