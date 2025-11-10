@@ -6,6 +6,10 @@ output "alb_dns" {
   value = aws_lb.app.dns_name
 }
 
+output "frontend_url" {
+  value = "http://${aws_lb.app.dns_name}"
+}
+
 output "reserva_target_group_arn" {
   value = aws_lb_target_group.reserva_tg.arn
 }
