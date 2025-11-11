@@ -7,7 +7,7 @@ output "alb_dns" {
 }
 
 output "frontend_url" {
-  value = "http://${aws_lb.app.dns_name}"
+  value = "https://vetgoicochea.site"
 }
 
 output "reserva_target_group_arn" {
